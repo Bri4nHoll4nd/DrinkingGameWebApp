@@ -1,0 +1,29 @@
+﻿@using Models;
+@page "/drinkinggame"
+
+<PageTitle>Drinking Game</PageTitle>
+
+<h1>Drinking Game</h1>
+
+<form>
+    <div>
+        <label for="names">Enter names (with space in-between): </label>
+        <input type="text" id="names" @bind-value="NamesList" />
+    </div>
+    <button type="submit" @onclick="HandleSubmit">Submit</button>
+</form>
+
+@code {
+    private string NamesList { get; set; }
+
+    private void HandleSubmit() {
+        Global.NamesArray = NamesList.Split(" ");
+        Global.NumberOfPlayers = Global.NamesArray.Length;
+
+
+        System.Console.Write("Number of players: {0}\n", Global.NumberOfPlayers);
+        foreach (string n in Global.NamesArray) {
+            System.Console.Write("{0} ", n);
+        }
+    }
+}
