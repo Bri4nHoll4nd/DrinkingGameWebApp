@@ -1,0 +1,19 @@
+﻿[
+  {
+    "prompt": "Name different kinds of cereal",
+    "type": "0"
+  },
+  {
+    "prompt": "go kiss a tree",
+    "type": "1"
+  },
+  {
+    "prompt": "choose 3 people in the room.",
+    "prompt2": "has to do fuck, marry or kill on those people",
+    "type": "2"
+  },
+  {
+    "prompt": "do a dare",
+    "type": "1"
+  }
+]
