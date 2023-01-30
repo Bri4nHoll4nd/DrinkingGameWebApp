@@ -1,4 +1,5 @@
-﻿@using Models;
+﻿@using DrinkingGameWebApp.Models;
+@using Newtonsoft.Json;
 @page "/drinkinggame"
 
 <PageTitle>Drinking Game</PageTitle>
@@ -10,10 +11,32 @@
 
 @code {
     private string tasky { get; set; }
-
+    static string jsonFile = File.ReadAllText("Tasks.json");
+    List<Tasker>? tasks = JsonConvert.DeserializeObject<List<Tasker>>(jsonFile);
+    Random rnd = new Random();
 
     private void HandleButtonPress()
     {
-        
+        int i = rnd.Next(0, tasks.Count);
+        int i2 = rnd.Next(0, Global.NumberOfPlayers);
+        int i3 = rnd.Next(0, Global.NumberOfPlayers);
+
+        while (i3 == i2)
+        {
+            i3 = rnd.Next(0, Global.NumberOfPlayers);
+        }
+
+        if (tasks[i].Type == 0)
+        {
+            tasky = tasks[i].Prompt;
+        }
+        else if (tasks[i].Type == 1)
+        {
+            tasky = String.Format("\n{0} {1}", Global.Players[i2], tasks[i].Prompt);
+        }
+        else if (tasks[i].Type == 2)
+        {
+            tasky = String.Format("\n{0} {1} {2} {3}", Global.Players[i2], tasks[i].Prompt, Global.Players[i3], tasks[i].Prompt2);
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace DrinkingGame.Models
+﻿namespace DrinkingGameWebApp.Models
 {
     public class Tasker
     {
