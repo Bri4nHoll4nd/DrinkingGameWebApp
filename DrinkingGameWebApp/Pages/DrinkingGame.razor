@@ -16,25 +16,26 @@
     List<Tasker>? tasks = JsonConvert.DeserializeObject<List<Tasker>>(jsonFile);
     Random rnd = new Random();
 
-    private void DeletePlayer(int id) => Players.RemoveAt(id);
-    private void DeletePrompt(int id) => Players.RemoveAt(id);
+    //private void DeletePlayer(int id) => Players.Remove(Players[id]);
+    //private void DeletePrompt(int id) => Players.Remove(tasks[id].Prompt);
 
     private void HandleButtonPress()
     {
-        if (tasks.Count == 0)
-        {
-            tasky = "No more prompts";
-            return;
-        }
+        //System.Console.Write(Players.Count);
+        //if (tasks.Count == 0)
+        //{
+            //tasky = "No more prompts";
+            //return;
+        //}
 
-        if (Players.Count == 1 || Players.Count == 0)
-        {
-            Players = new List<string>(Global.Players);
-        }
+        //if (Players.Count == 1 || Players.Count == 0)
+        //{
+            //Players = new List<string>(Global.Players);
+        //}
 
-        int i = rnd.Next(0, tasks.Count);
-        int i2 = rnd.Next(0, Players.Count);
-        int i3 = rnd.Next(0, Players.Count);
+        int i = rnd.Next(tasks.Count);
+        int i2 = rnd.Next(Players.Count);
+        int i3 = rnd.Next(Players.Count);
 
         while (i3 == i2)
         {
@@ -47,16 +48,16 @@
         }
         else if (tasks[i].Type == 1)
         {
-            tasky = String.Format("\n{0} {1}", Global.Players[i2], tasks[i].Prompt);
-            DeletePrompt(i);
-            DeletePlayer(i2);
+            tasky = String.Format("\n{0} {1}", Players[i2], tasks[i].Prompt);
+            //DeletePrompt(i);
+            //DeletePlayer(i2);
         }
         else if (tasks[i].Type == 2)
         {
-            tasky = String.Format("\n{0} {1} {2} {3}", Global.Players[i2], tasks[i].Prompt, Global.Players[i3], tasks[i].Prompt2);
-            DeletePrompt(i);
-            DeletePlayer(i2);
-            DeletePlayer(i3);
+            tasky = String.Format("\n{0} {1} {2} {3}", Players[i2], tasks[i].Prompt, Players[i3], tasks[i].Prompt2);
+            //DeletePrompt(i);
+            //DeletePlayer(i2);
+            //DeletePlayer(i3);
         }
     }
 }
