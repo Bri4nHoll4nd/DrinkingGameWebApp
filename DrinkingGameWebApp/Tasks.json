@@ -68,11 +68,87 @@
     "type": "0"
   },
   {
+    "prompt": "Never have i ever: put whirt on backwards or inside out, only to have someone point it out",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing Poll: Who is the last person to leave the club?",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing Poll: Who has the wierdest taste in music?",
+    "type": "0"
+  },
+  {
+    "prompt": "Everyone driks sips equal to the lagest age gap between you and someone you have banged",
+    "type": "0"
+  },
+  {
+    "prompt": "Never have i ever: lied in Never have i ever",
+    "type": "0"
+  },
+  {
+    "prompt": "Thumbs up/down: Wine or cheese?",
+    "type": "0"
+  },
+  {
+    "prompt": "Thumbs up/down: Imagine you are locked in a room full of spiders. Would you have the lights on or off?",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing Poll: Who is most likely to pass out in a ditch after the party?",
+    "type": "0"
+  },
+  {
+    "prompt": "Never have i ever: been locked inside an elevator",
+    "type": "0"
+  },
+  {
+    "prompt": "Never have i ever: cheated on a test",
+    "type": "0"
+  },
+  {
+    "prompt": "Thumbs up/down: Never go to clubs again or always do Fornite dances for 1 hour straight every time you are at a club?",
+    "type": "0"
+  },
+  {
+    "prompt": "Drink if you've pissed yourself in public",
+    "type": "0"
+  },
+  {
+    "prompt": "Drink if you've shit yourself in public",
+    "type": "0"
+  },
+  {
+    "prompt": "If you have cigarettes on you drink",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing Poll: Who has the best style?",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing Poll: Who is the sexiest?",
+    "type": "0"
+  },
+  {
+    "prompt": "You can no longer say yes or no, if you do drink. Lasts for 10 rounds",
+    "type": "0"
+  },
+  {
+    "prompt": "Thumbs up/down: Would you rather always feel like there is a small rock in your shoe, or always crumbs in your bed",
+    "type": "0"
+  },
+  {
     "prompt": "give away 3 sips",
     "type": "1"
   },
   {
     "prompt": "starts, What rimes with lime",
+    "type": "1"
+  },
+  {
+    "prompt": "starts, What rimes with gold",
     "type": "1"
   },
   {
@@ -96,6 +172,38 @@
     "type": "1"
   },
   {
+    "prompt": " give a dilemma. Thumbs up/down",
+    "type": "1"
+  },
+  {
+    "prompt": "starts, name marvel characters",
+    "type": "1"
+  },
+  {
+    "prompt": "starts, name dc characters",
+    "type": "1"
+  },
+  {
+    "prompt": "who in the group would be siblings based on appearance? They have to drink",
+    "type": "1"
+  },
+  {
+    "prompt": "name a celeb you rate 10/10. If your group agrees, deal out 4 drinks or if not you have to drink",
+    "type": "1"
+  },
+  {
+    "prompt": "finish your drink",
+    "type": "1"
+  },
+  {
+    "prompt": "pick a person that has to chug their drink",
+    "type": "1"
+  },
+  {
+    "prompt": "whenever you want start a round of Thumb master (gris)",
+    "type": "1"
+  },
+  {
     "prompt": "starts, name cities that start with the letter",
     "prompt2": "selects",
     "type": "2"
@@ -106,8 +214,18 @@
     "type": "2"
   },
   {
-    "prompt": "choose 3 people in the room.",
-    "prompt2": "has to do fuck, marry or kill on those people",
+    "prompt": "has to sit on",
+    "prompt2": "'s lap for 8 rounds",
+    "type": "2"
+  },
+  {
+    "prompt": "and",
+    "prompt2": ", what is the most expensive thing you've destroyed.The least destructive has to drink",
+    "type": "2"
+  },
+  {
+    "prompt": "close your eyes. If you can name the color of",
+    "prompt2": "'s shirt then give 6 sips or drink",
     "type": "2"
   }
 ]
