@@ -10,20 +10,35 @@
 <button class="btn btn-primary" @onclick="HandleButtonPress">Task</button>
 
 @code {
+    List<string> Players = new List<string>(Global.Players);
     private string tasky { get; set; }
     static string jsonFile = File.ReadAllText("Tasks.json");
     List<Tasker>? tasks = JsonConvert.DeserializeObject<List<Tasker>>(jsonFile);
     Random rnd = new Random();
 
+    private void DeletePlayer(int id) => Players.RemoveAt(id);
+    private void DeletePrompt(int id) => Players.RemoveAt(id);
+
     private void HandleButtonPress()
     {
+        if (tasks.Count == 0)
+        {
+            tasky = "No more prompts";
+            return;
+        }
+
+        if (Players.Count == 1 || Players.Count == 0)
+        {
+            Players = new List<string>(Global.Players);
+        }
+
         int i = rnd.Next(0, tasks.Count);
-        int i2 = rnd.Next(0, Global.NumberOfPlayers);
-        int i3 = rnd.Next(0, Global.NumberOfPlayers);
+        int i2 = rnd.Next(0, Players.Count);
+        int i3 = rnd.Next(0, Players.Count);
 
         while (i3 == i2)
         {
-            i3 = rnd.Next(0, Global.NumberOfPlayers);
+            i3 = rnd.Next(0, Players.Count);
         }
 
         if (tasks[i].Type == 0)
@@ -33,10 +48,15 @@
         else if (tasks[i].Type == 1)
         {
             tasky = String.Format("\n{0} {1}", Global.Players[i2], tasks[i].Prompt);
+            DeletePrompt(i);
+            DeletePlayer(i2);
         }
         else if (tasks[i].Type == 2)
         {
             tasky = String.Format("\n{0} {1} {2} {3}", Global.Players[i2], tasks[i].Prompt, Global.Players[i3], tasks[i].Prompt2);
+            DeletePrompt(i);
+            DeletePlayer(i2);
+            DeletePlayer(i3);
         }
     }
 }

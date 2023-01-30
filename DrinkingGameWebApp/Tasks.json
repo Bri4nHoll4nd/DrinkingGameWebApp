@@ -1,19 +1,113 @@
 ﻿[
   {
-    "prompt": "Name different kinds of cereal",
+    "prompt": "Name sex positions",
     "type": "0"
   },
   {
-    "prompt": "go kiss a tree",
+    "prompt": "Pointing poll: Who is the best at beer pong?",
+    "type": "0"
+  },
+  {
+    "prompt": "Thumbs up/down: Xbox or Playstation?",
+    "type": "0"
+  },
+  {
+    "prompt": "Drink if you have a picture of yourself as your phone background. If it's a selfie drink again",
+    "type": "0"
+  },
+  {
+    "prompt": "Drink if you've ever had sex in water",
+    "type": "0"
+  },
+  {
+    "prompt": "Drink if you've gotten drunk in the woods'",
+    "type": "0"
+  },
+  {
+    "prompt": "The person to the left of me can give out 4 sips",
+    "type": "0"
+  },
+  {
+    "prompt": "Never have i ever: got called out for saying the n-word",
+    "type": "0"
+  },
+  {
+    "prompt": "The person in the room with the wierdest drink, has to drink",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing Poll: Who googles themselves the most?",
+    "type": "0"
+  },
+  {
+    "prompt": "Never have i ever: dyed my hair",
+    "type": "0"
+  },
+  {
+    "prompt": "Rule: For the next 10 rounds you cant touch your head",
+    "type": "0"
+  },
+  {
+    "prompt": "Thumbs up/down: Beer or wine?",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing Poll: Who is the worst driver?",
+    "type": "0"
+  },
+  {
+    "prompt": "Drink if an animal has ever attacked you",
+    "type": "0"
+  },
+  {
+    "prompt": "Pointing poll: Who would you trust to watch your kids?",
+    "type": "0"
+  },
+  {
+    "prompt": "Never have i ever: Walked out of the cinema because the movie was trash",
+    "type": "0"
+  },
+  {
+    "prompt": "give away 3 sips",
     "type": "1"
+  },
+  {
+    "prompt": "starts, What rimes with lime",
+    "type": "1"
+  },
+  {
+    "prompt": "show a party trick and hand out 3 sips. Else drink yourself",
+    "type": "1"
+  },
+  {
+    "prompt": "pick the best dressed, that person drinks",
+    "type": "1"
+  },
+  {
+    "prompt": "make a rule for the next 15 rounds. Be creative",
+    "type": "1"
+  },
+  {
+    "prompt": "has to show their most recent photo on their phone or drink",
+    "type": "1"
+  },
+  {
+    "prompt": "starts, name presidents",
+    "type": "1"
+  },
+  {
+    "prompt": "starts, name cities that start with the letter",
+    "prompt2": "selects",
+    "type": "2"
+  },
+  {
+    "prompt": "has to sit on",
+    "prompt2": "'s lap for 8 rounds",
+    "type": "2"
   },
   {
     "prompt": "choose 3 people in the room.",
     "prompt2": "has to do fuck, marry or kill on those people",
     "type": "2"
-  },
-  {
-    "prompt": "do a dare",
-    "type": "1"
   }
 ]
